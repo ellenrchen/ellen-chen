@@ -72,7 +72,8 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-subtle': 'var(--gradient-subtle)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
