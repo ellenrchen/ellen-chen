@@ -11,7 +11,7 @@ const About = () => {
     {
       icon: Camera,
       title: "Photography", 
-      description: "Behind the camera capturing moments"
+      description: "Behind and in front of the camera - capturing moments and modeling"
     },
     {
       icon: GraduationCap,
