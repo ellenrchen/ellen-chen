@@ -40,7 +40,7 @@ const Hero = () => {
                 Hi, I'm{" "}
                 <span className="bg-gradient-hero bg-clip-text text-transparent relative">
                   Ellen Chen
-                  <div className="absolute -top-2 -right-2 w-3 h-3 bg-primary/60 rounded-full animate-pulse"></div>
+                  <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary/60 rounded-full animate-pulse"></div>
                 </span>
               </h1>
               
