@@ -33,7 +33,7 @@ const Hero = () => {
               {/* Creative badge */}
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium animate-fade-in">
                 <Sparkles className="h-4 w-4" />
-                Available for opportunities
+                Full-Stack Developer
               </div>
               
               <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
@@ -98,12 +98,12 @@ const Hero = () => {
           {/* Creative image section */}
           <div className="relative animate-fade-in">
             <div className="relative group">
-              {/* Background decoration */}
-              <div className="absolute -inset-4 bg-gradient-hero rounded-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 animate-pulse"></div>
-              <div className="absolute -inset-2 bg-gradient-to-r from-primary/30 to-primary-glow/30 rounded-2xl blur-xl"></div>
+              {/* Background decoration - toned down */}
+              <div className="absolute -inset-3 bg-gradient-hero rounded-3xl opacity-10 group-hover:opacity-15 transition-opacity duration-500"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl blur-sm"></div>
               
               {/* Main image container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-glow bg-white p-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-card bg-white p-2">
                 <div className="relative rounded-xl overflow-hidden">
                   <img 
                     src={heroImage} 
@@ -111,14 +111,7 @@ const Hero = () => {
                     className="w-full h-[500px] lg:h-[600px] object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   
-                  {/* Floating badges */}
-                  <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-elegant animate-bounce">
-                    <div className="flex items-center gap-2 text-sm font-medium text-foreground">
-                      <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                      Available to hire
-                    </div>
-                  </div>
-                  
+                  {/* Location badge only */}
                   <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-elegant">
                     <div className="text-sm font-medium text-foreground">NYC Based</div>
                   </div>
