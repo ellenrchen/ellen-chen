@@ -9,7 +9,7 @@ const Footer = () => {
             Built with <Heart className="h-4 w-4 text-red-500 fill-current" /> using React & TypeScript
           </p>
           <p className="text-sm text-muted-foreground">
-            © 2024 Ellen Chen. All rights reserved.
+            © 2025 Ellen Chen. All rights reserved.
           </p>
         </div>
       </div>
