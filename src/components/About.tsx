@@ -49,8 +49,10 @@ const About = () => {
                       where I've contributed to products that serve millions of users.
                     </p>
                     <p>
-                     When I'm not coding, you'll find me at the gym trying to hit a new PR, walking the runway, 
-                      or shouting at the TV during a Duke basketball game (goooo Blue Devils!!).
+                      I believe in writing clean, maintainable code and am passionate about 
+                      creating exceptional user experiences. Whether it's optimizing performance, 
+                      implementing new features, or solving complex technical challenges, 
+                      I approach each project with curiosity and dedication.
                     </p>
                   </div>
                 </div>
