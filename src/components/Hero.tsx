@@ -84,10 +84,6 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-primary">3+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">∞</div>
-                <div className="text-sm text-muted-foreground">Problems Solved</div>
-              </div>
             </div>
           </div>
           
