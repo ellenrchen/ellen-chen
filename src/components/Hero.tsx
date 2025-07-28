@@ -121,7 +121,7 @@ const Hero = () => {
                     React
                   </div>
                   <div className="absolute bottom-1/3 -right-4 bg-primary-glow text-white px-3 py-1 rounded-full text-xs font-medium animate-bounce delay-700">
-                    TypeScript
+                    Kotlin
                   </div>
                 </div>
               </div>
