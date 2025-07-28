@@ -15,24 +15,9 @@ const Skills = () => {
       skills: ["Node.js", "Python", "Java", "SQL", "GraphQL", "REST APIs", "Microservices"]
     },
     {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Firebase", "Docker", "CI/CD", "Git", "Snowflake"]
-    },
-    {
       icon: Wrench,
       title: "Tools & Frameworks",
-      skills: ["Kotlin", "C++", "Stripe", "BFF", "Polsky LAUNCH", "LTF Ventures"]
-    },
-    {
-      icon: Globe,
-      title: "Specializations",
-      skills: ["Full-Stack Development", "Mobile Development", "System Design", "Performance Optimization"]
-    },
-    {
-      icon: Smartphone,
-      title: "Personal",
-      skills: ["Bilingual (Mandarin)", "Leadership", "Entrepreneurship", "Problem Solving"]
+      skills: ["Git", "Docker", "AWS", "Firebase", "Stripe", "Kotlin", "C++"]
     }
   ];
 
@@ -72,18 +57,6 @@ const Skills = () => {
                 </div>
               </Card>
             ))}
-          </div>
-          
-          <div className="mt-16 text-center">
-            <Card className="p-8 bg-gradient-hero shadow-elegant border-0 max-w-2xl mx-auto">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-white">Ready to Collaborate?</h3>
-                <p className="text-white/90 leading-relaxed">
-                  I'm always excited to work on challenging projects and learn new technologies. 
-                  Let's build something amazing together!
-                </p>
-              </div>
-            </Card>
           </div>
         </div>
       </div>
