@@ -12,7 +12,7 @@ const Projects = () => {
     {
       title: "Tech News Agent",
       description: "Engineered a Python workflow that pulls articles from 8 tech RSS feeds, ranks them, and uses GPT-3.5-Turbo generated summaries to create daily CLI/email digest",
-      technologies: ["Python", "GPT-3.5-Turbo", "RSS", "CLI", "Email API"]
+      technologies: ["Python", "GPT-3.5-Turbo", "RSS"]
     }
   ];
 
