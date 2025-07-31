@@ -11,6 +11,7 @@ const Experience = () => {
       period: "April 2023 - Present",
       type: "Full-time",
       highlights: [
+        "Implementing Smart Navigation for Agent Productivity (SNAP), a command center consolidating 7 disparate onboarding tools into a single Groq-powered, agentic-AI dashboard to streamline Premier Onboarding Partner (POP) workflows",
         "Driving cross-functional design/implementation of the Self Serve Merchant Onboarding (SSMO) flow for Alcohol SMBs, projected to cut onboarding time by ~6 days for inbound merchants (22% of CW past 2 quarters)",
         "Built in-portal referral flow (FE+BFF); drove +13% view-to-submission conversion and lifted referrals to 4.7% of all completed sign-ups (~42% YoY)",
         "Led cross-team experiment (SSMO × BizApps) mandating headers for Mx activation, yielded +1.7% site uptime and contributed to +7.8% growth in new-merchant TAM attainment",
