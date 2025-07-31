@@ -25,7 +25,7 @@ const Experience = () => {
       period: "January 2023 - April 2023",
       type: "Startup",
       highlights: [
-        "Co-founded and developed business concept of Locavor, a platform to connect restaurants with local suppliers",
+        "Co-founded and developed business concept of Locavor, a B2B marketplace that streamlines suppliers’ order management and gives restaurants faster access to fresher, lower-cost ingredients",
         "Designed and shipped iOS application using React-Native and Firebase, which reached 60 active users and raised $13k in pre-seed through Polsky LAUNCH Accelerator and LTF Ventures",
         "Selected as semi-finalist and invited to pitch at TCU Neely School of Business Values and Venture Competition"
       ],
