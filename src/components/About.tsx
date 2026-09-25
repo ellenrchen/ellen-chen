@@ -1,6 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import { Instagram } from "lucide-react";
-import backstageImg from "@/assets/backstage.jpg";
+import runwayImg from "@/assets/runway.jpg";
 import foodProfileImg from "@/assets/food-profile.jpg";
 
 const baseLink =
@@ -49,12 +49,12 @@ const About = () => (
             </div>
           </div>
 
-          {/* Photo + Instagram card */}
-          <div className="flex flex-col gap-6">
-            <div className={`${photoFrame} w-[82%]`}>
+          {/* Photo + Instagram card overlapping bottom right */}
+          <div className="relative">
+            <div className={`${photoFrame} w-[88%]`}>
               <img
-                src={backstageImg}
-                alt="Ellen backstage in a fur collar and pleated skirt"
+                src={runwayImg}
+                alt="Ellen walking the runway"
                 className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
@@ -63,7 +63,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-[82%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-[1.02]"
+              className="absolute right-0 bottom-6 w-[82%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
