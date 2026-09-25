@@ -1,6 +1,6 @@
 import SectionHeading from "./SectionHeading";
 import { Instagram } from "lucide-react";
-import backstageImg from "@/assets/backstage.jpg";
+import runwayImg from "@/assets/runway.jpg";
 import foodProfileImg from "@/assets/food-profile.jpg";
 
 const baseLink =
@@ -53,8 +53,8 @@ const About = () => (
           <div className="flex flex-col gap-6">
             <div className={`${photoFrame} w-[82%]`}>
               <img
-                src={backstageImg}
-                alt="Ellen backstage in a fur collar and pleated skirt"
+                src={runwayImg}
+                alt="Ellen walking the runway"
                 className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
