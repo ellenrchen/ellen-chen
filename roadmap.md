@@ -24,3 +24,6 @@
 
 ## In progress
 - [x] About page redesign — Editorial Asymmetry direction implemented
+
+## In progress
+- [ ] Workshops: scalable list layout for multiple series (mocks in progress)
