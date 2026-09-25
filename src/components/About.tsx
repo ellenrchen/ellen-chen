@@ -1,15 +1,13 @@
 import SectionHeading from "./SectionHeading";
 import { Instagram } from "lucide-react";
-import runwayImg from "@/assets/runway.jpg";
-import vogueImg from "@/assets/vogue-street.jpg";
 import backstageImg from "@/assets/backstage.jpg";
-import headshotImg from "@/assets/ellen-headshot.jpeg";
+import foodProfileImg from "@/assets/food-profile.jpg";
 
 const baseLink =
   "font-medium underline decoration-border underline-offset-4 transition-colors";
 
 const photoFrame =
-  "absolute shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]";
+  "shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-[1.02]";
 
 const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
