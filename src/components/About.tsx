@@ -51,7 +51,7 @@ const About = () => (
 
           {/* Photo + Instagram card overlapping bottom right */}
           <div className="relative">
-            <div className={`${photoFrame} ml-[12%] w-[70%]`}>
+            <div className={`${photoFrame} ml-[10%] w-[62%]`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking the runway"
@@ -63,7 +63,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute -right-4 bottom-5 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
+              className="relative z-10 -mt-8 ml-auto mr-0 w-[58%] bg-card border border-border p-3 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
