@@ -43,6 +43,7 @@ const About = () => (
               </a>
               . I'm also a big Duke fan.
             </p>
+            </div>
           </div>
           <div className="md:col-span-2">
             <img
