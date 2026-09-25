@@ -16,4 +16,4 @@
 - [x] Experience page: gutter sidebar with company names (EliseAI, DoorDash, Locavor, DoorDash Intern, Microsoft)
 
 ## In progress
-- [ ] About collage simplified: keep backstage photo + ellyeats_ card only; new food-profile.jpg as card avatar
+- [x] About collage simplified: backstage photo + ellyeats_ card; new food-profile.jpg as card avatar
