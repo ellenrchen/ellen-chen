@@ -31,6 +31,7 @@ const CompanyLogo = ({ company }: { company: string }) => (
 const Experience = () => {
   const experiences = [
     {
+      id: "eliseai",
       company: "EliseAI",
       position: "Full-Stack Senior Software Engineer",
       location: "New York, NY",
@@ -45,6 +46,7 @@ const Experience = () => {
       technologies: ["React", "TypeScript", "Python", "AI/LLMs"]
     },
     {
+      id: "doordash",
       company: "DoorDash",
       position: "Full-Stack Software Engineer",
       location: "New York, NY",
@@ -59,6 +61,7 @@ const Experience = () => {
       technologies: ["React", "TypeScript", "Python", "GraphQL", "Microservices"]
     },
     {
+      id: "locavor",
       company: "Locavor",
       position: "Co-Founder and CTO",
       location: "Chicago, IL",
@@ -71,6 +74,7 @@ const Experience = () => {
       technologies: ["React Native", "Firebase", "iOS Development", "Startup"]
     },
     {
+      id: "doordash-intern",
       company: "DoorDash",
       position: "Software Engineer, Intern",
       location: "San Francisco, CA",
@@ -83,6 +87,7 @@ const Experience = () => {
       technologies: ["React", "GraphQL", "Snowflake", "BFF"]
     },
     {
+      id: "microsoft",
       company: "Microsoft",
       position: "Explore (SWE & PM) Intern",
       location: "Redmond, WA",
@@ -104,8 +109,12 @@ const Experience = () => {
           <SectionHeading eyebrow="Experience" title="Where I've worked" />
           
           <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <Card key={index} className="p-6 md:p-8 bg-card shadow-card border border-border">
+            {experiences.map((exp) => (
+              <Card
+                key={exp.id}
+                id={exp.id}
+                className="p-6 md:p-8 bg-card shadow-card border border-border scroll-mt-28"
+              >
                 <div className="space-y-6">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                     <div className="flex items-center gap-4">
