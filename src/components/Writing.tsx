@@ -61,7 +61,20 @@ const Writing = () => (
         <SectionHeading
           eyebrow="Writing"
           title="Articles on AI agents & developer tools"
-          subtitle="Explainers and build logs I publish on Medium."
+          subtitle={
+            <>
+              Explainers and build logs I publish on{" "}
+              <a
+                href="https://medium.com/@ellenrchen8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium underline decoration-border underline-offset-4 transition-colors hover:decoration-current"
+              >
+                Medium
+              </a>
+              .
+            </>
+          }
         />
 
         {/* Medium profile embed lookalike */}
