@@ -6,7 +6,7 @@ const baseLink =
   "font-medium underline decoration-border underline-offset-4 transition-colors";
 
 const About = () => (
-  <section id="about" className="py-20 md:py-28 bg-background">
+  <section id="about" className="py-12 md:py-16 bg-background">
     <div className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 lg:items-center">
         {/* Left column: copy */}
