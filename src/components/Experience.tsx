@@ -1,3 +1,4 @@
+import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CalendarDays, MapPin, ExternalLink } from "lucide-react";
@@ -60,24 +61,19 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-subtle">
+    <section id="experience" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-foreground">Professional Experience</h2>
-            <p className="text-xl text-muted-foreground">
-              Building impactful solutions across different scales and industries
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <SectionHeading eyebrow="Experience" title="Where I've worked" />
           
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card key={index} className="p-8 bg-background shadow-card border-0 hover:shadow-elegant transition-all duration-300">
+              <Card key={index} className="p-6 md:p-8 bg-card shadow-card border border-border">
                 <div className="space-y-6">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-semibold text-foreground">{exp.position}</h3>
-                      <h4 className="text-xl text-primary font-medium">{exp.company}</h4>
+                      <h3 className="text-xl font-semibold text-foreground">{exp.position}</h3>
+                      <h4 className="text-base text-primary font-medium">{exp.company}</h4>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
                       <Badge variant="secondary" className="flex items-center gap-1">
@@ -95,7 +91,7 @@ const Experience = () => {
                     <ul className="space-y-3">
                       {exp.highlights.map((highlight, idx) => (
                         <li key={idx} className="flex items-start gap-3 text-muted-foreground">
-                          <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
                           <span className="leading-relaxed">{highlight}</span>
                         </li>
                       ))}

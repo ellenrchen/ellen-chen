@@ -1,3 +1,4 @@
+import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,26 +6,21 @@ import { Mail, Github, Linkedin, MapPin, Calendar, GraduationCap } from "lucide-
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-subtle">
+    <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-foreground">Let's Connect</h2>
-            <p className="text-xl text-muted-foreground">
-              Ready to collaborate or just want to say hello?
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <SectionHeading eyebrow="Contact" title="Let's connect" subtitle="Open to conversations about engineering, developer relations, and teaching." />
           
-          <div className="max-w-2xl mx-auto">
-            <Card className="p-8 bg-background shadow-card border-0">
-              <div className="space-y-6 text-center">
-                <h3 className="text-2xl font-semibold text-foreground">Get In Touch</h3>
+          <div className="max-w-2xl">
+            <Card className="p-8 bg-card shadow-card border border-border">
+              <div className="space-y-6">
+                <h3 className="text-xl font-semibold text-foreground">Get in touch</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   I'm always open to discussing new opportunities, interesting projects, 
                   or just chatting about technology.
                 </p>
                 
-                <div className="space-y-4 max-w-md mx-auto">
+                <div className="space-y-4 max-w-md">
                   <Button 
                     variant="hero" 
                     size="lg" 
