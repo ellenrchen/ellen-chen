@@ -22,7 +22,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
         <nav className="flex h-16 items-center justify-between">
-          <Link to="/" className="text-lg font-semibold tracking-tight text-foreground">
+          <Link to="/" className="font-serif text-2xl italic tracking-tight text-foreground transition-opacity hover:opacity-70">
             Ellen Chen
           </Link>
 

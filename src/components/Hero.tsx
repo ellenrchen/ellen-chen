@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight, Github, MapPin } from "lucide-react";
 import heroImage from "@/assets/ellen-headshot-bw.jpg";
 
 const Hero = () => {
-  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-
   return (
-    <section className="relative flex min-h-screen items-center bg-background pt-16">
+    <section className="relative flex min-h-[calc(100vh-4rem)] items-center bg-background">
       <div className="container mx-auto px-6 py-16 md:py-24">
         <div className="max-w-6xl mx-auto flex flex-col items-center justify-between gap-12 md:flex-row md:gap-24">
           <div className="order-2 flex-1 space-y-8 animate-fade-up md:order-1">
@@ -33,8 +32,8 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button variant="hero" size="lg" onClick={() => go("writing")}>
-                See my work <ArrowDown className="ml-2 h-4 w-4" />
+              <Button variant="hero" size="lg" asChild>
+                <Link to="/portfolio">See my work <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="https://github.com/ellenrchen" target="_blank" rel="noopener noreferrer">
