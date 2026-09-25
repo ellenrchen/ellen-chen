@@ -71,7 +71,7 @@ const PortfolioPage = () => {
           ))}
         </div>
 
-        <div className="min-w-0">
+        <div className="min-w-0 xl:pl-24">
           <Writing />
           <Workshops />
         </div>
