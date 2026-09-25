@@ -53,27 +53,27 @@ const About = () => (
 
           {/* Collage: photos + Instagram card, casually stacked */}
           <div className="relative h-[440px] sm:h-[560px] lg:h-[660px]">
-            <div className={`${photoFrame} left-0 top-0 w-[68%] -rotate-2 z-0`}>
+            <div className={`${photoFrame} left-0 top-0 w-[70%] -rotate-2 z-0`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking a runway"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} right-0 top-10 w-[46%] rotate-[2.5deg] z-10`}>
+            <div className={`${photoFrame} right-0 top-6 w-[48%] rotate-[2.5deg] z-10`}>
               <img
                 src={vogueImg}
                 alt="Ellen in a sheer blue dress during a street-style shoot"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} left-[10%] bottom-[20%] w-[42%] rotate-[1.5deg] z-10`}>
+            <div className={`${photoFrame} left-[6%] bottom-6 w-[44%] rotate-[1.5deg] z-10`}>
               <img
                 src={backstageImg}
                 alt="Ellen backstage in a fur collar and pleated skirt"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
