@@ -10,5 +10,3 @@
 
 ## Open
 - Locavor logo: send the real logo file to replace the leaf placeholder
-- [x] Split site into pages (Home, About, Experience, Portfolio)
-- [x] Sleeker header name
