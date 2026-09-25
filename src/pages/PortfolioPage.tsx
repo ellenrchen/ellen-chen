@@ -36,7 +36,7 @@ const PortfolioPage = () => {
     <Layout>
       <div className="container mx-auto px-6">
         {/* Gutter nav — sits in the left margin, content column stays centered */}
-        <nav className="hidden xl:block fixed top-32 left-[calc(50%-35rem)] w-32 z-10">
+        <nav className="hidden xl:block fixed top-32 left-6 w-32 z-10">
           <div className="flex flex-col gap-1">
             {sections.map((s) => (
               <button
