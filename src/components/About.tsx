@@ -57,7 +57,7 @@ const About = () => (
               <img
                 src={runwayImg}
                 alt="Ellen walking the runway"
-                className="w-full aspect-[3/4] object-cover object-top"
+                className="w-full aspect-[3/4] object-cover object-bottom"
                 loading="lazy"
               />
             </div>
