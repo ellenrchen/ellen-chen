@@ -11,6 +11,6 @@
 ## Open
 - Locavor logo: send the real logo file to replace the leaf placeholder
 
-## In progress (this turn)
-- [ ] About redesign: 3-photo collage (runway, Vogue street-style, backstage) + Instagram @ellyeats_ profile card
-- [ ] Experience page: gutter sidebar with company names (EliseAI, DoorDash, Locavor, DoorDash Intern, Microsoft)
+## Done
+- [x] About redesign: 3-photo collage (runway, Vogue street-style, backstage) + Instagram @ellyeats_ profile card
+- [x] Experience page: gutter sidebar with company names (EliseAI, DoorDash, Locavor, DoorDash Intern, Microsoft)
