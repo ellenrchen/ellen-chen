@@ -49,25 +49,9 @@ const About = () => (
             </div>
           </div>
 
-          {/* Collage: photos + Instagram card, stacked edge to edge */}
-          <div className="relative h-[440px] sm:h-[560px] lg:h-[660px]">
-            <div className={`${photoFrame} left-0 top-0 w-[70%] z-0`}>
-              <img
-                src={runwayImg}
-                alt="Ellen walking a runway"
-                className="w-full aspect-[2/3] object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className={`${photoFrame} right-0 top-6 w-[48%] z-10`}>
-              <img
-                src={vogueImg}
-                alt="Ellen in a sheer blue dress during a street-style shoot"
-                className="w-full aspect-[2/3] object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className={`${photoFrame} left-[6%] bottom-6 w-[44%] z-10`}>
+          {/* Photo + Instagram card */}
+          <div className="flex flex-col gap-6">
+            <div className={`${photoFrame} w-[82%]`}>
               <img
                 src={backstageImg}
                 alt="Ellen backstage in a fur collar and pleated skirt"
@@ -79,7 +63,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 bottom-0 z-20 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]"
+              className="w-[82%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-[1.02]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
@@ -88,8 +72,8 @@ const About = () => (
                   style={{ background: "linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)" }}
                 >
                   <img
-                    src={headshotImg}
-                    alt="Ellen Chen"
+                    src={foodProfileImg}
+                    alt="ellyeats_ profile"
                     className="h-9 w-9 rounded-full border-2 border-card object-cover"
                   />
                 </div>
