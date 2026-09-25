@@ -27,4 +27,4 @@
 
 ## In progress
 - [ ] Workshops: scalable list layout for multiple series (mocks in progress)
-- [ ] Workshops: group web workshops as one series group; scalable to add more series
+- [x] Workshops: group web workshops as one series group; scalable to add more series
