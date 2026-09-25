@@ -51,7 +51,7 @@ const About = () => (
 
           {/* Photo + Instagram card overlapping bottom right */}
           <div className="relative">
-            <div className={`${photoFrame} w-[88%]`}>
+            <div className={`${photoFrame} w-[70%]`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking the runway"
@@ -63,7 +63,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 bottom-6 w-[82%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
+              className="absolute right-0 bottom-2 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
@@ -71,11 +71,13 @@ const About = () => (
                   className="flex-shrink-0 rounded-full p-[2px]"
                   style={{ background: "linear-gradient(45deg,#F58529,#DD2A7B,#8134AF)" }}
                 >
-                  <img
-                    src={foodProfileImg}
-                    alt="ellyeats_ profile"
-                    className="h-9 w-9 rounded-full border-2 border-card object-cover"
-                  />
+                  <div className="h-9 w-9 overflow-hidden rounded-full border-2 border-card">
+                    <img
+                      src={foodProfileImg}
+                      alt="ellyeats_ profile"
+                      className="h-full w-full scale-[1.8] object-cover object-[50%_30%]"
+                    />
+                  </div>
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm font-semibold text-foreground truncate">ellyeats_</p>
