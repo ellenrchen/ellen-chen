@@ -1,5 +1,4 @@
 import SectionHeading from "./SectionHeading";
-import LinkCard from "./LinkCard";
 
 const workshops = [
   {
@@ -26,7 +25,7 @@ const workshops = [
 ];
 
 const Workshops = () => (
-  <section id="workshops" className="py-20 md:py-28 bg-muted/30">
+  <section id="workshops" className="py-20 md:py-28">
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto">
         <SectionHeading
@@ -36,13 +35,33 @@ const Workshops = () => (
         />
         <div className="grid gap-6 md:grid-cols-3">
           {workshops.map((w, i) => (
-            <LinkCard
+            <div
               key={w.title}
-              meta={<span className="font-medium text-primary">Part {i + 1} of 3</span>}
-              title={w.title}
-              description={w.description}
-              links={w.links}
-            />
+              className="group border border-border bg-card p-8 flex flex-col justify-between transition-colors duration-300 hover:border-primary"
+            >
+              <div>
+                <span className="block text-[10px] font-semibold uppercase tracking-widest text-muted-foreground mb-8">
+                  Part {i + 1} of 3
+                </span>
+                <h3 className="text-2xl font-medium text-foreground mb-4">{w.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-12">
+                  {w.description}
+                </p>
+              </div>
+              <div className="flex gap-6">
+                {w.links.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[11px] font-semibold uppercase tracking-widest text-foreground border-b border-transparent pb-0.5 hover:border-primary transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
