@@ -10,8 +10,8 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <SectionHeading eyebrow="Contact" title="Let's connect" subtitle="Open to conversations about engineering, developer relations, and teaching." />
-          
-          <div className="max-w-2xl">
+
+          <div className="mx-auto max-w-2xl text-center">
             <Card className="p-8 bg-card shadow-card border border-border">
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold text-foreground">Get in touch</h3>
@@ -20,7 +20,7 @@ const Contact = () => {
                   or just chatting about technology.
                 </p>
                 
-                <div className="space-y-4 max-w-md">
+                <div className="space-y-4 max-w-md mx-auto">
                   <Button 
                     variant="hero" 
                     size="lg" 

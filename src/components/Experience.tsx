@@ -6,10 +6,21 @@ import { CalendarDays, MapPin, ExternalLink } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      company: "EliseAI",
+      position: "Software Engineer",
+      location: "New York, NY",
+      period: "2025 - Present",
+      type: "Full-time",
+      highlights: [
+        "Building AI-powered products that automate housing and healthcare operations at scale"
+      ],
+      technologies: ["React", "TypeScript", "Python", "AI/LLMs"]
+    },
+    {
       company: "DoorDash",
       position: "Full-Stack Software Engineer",
       location: "New York, NY",
-      period: "April 2023 - Present",
+      period: "April 2023 - 2025",
       type: "Full-time",
       highlights: [
         "Implementing Smart Navigation for Agent Productivity (SNAP), a command center consolidating 7 disparate onboarding tools into a single Groq-powered, agentic-AI dashboard to streamline Premier Onboarding Partner (POP) workflows",

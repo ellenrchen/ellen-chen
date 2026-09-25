@@ -12,18 +12,17 @@ const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto">
-        <SectionHeading eyebrow="About" title="A software engineer who teaches" />
+        <SectionHeading eyebrow="About" title="About me" />
         <div className="grid gap-10 lg:grid-cols-3 lg:gap-12">
           <div className="lg:col-span-2 space-y-5 text-lg leading-relaxed text-muted-foreground">
             <p>
-              I'm a Software Engineer at EliseAI in New York City, with over 3 years of experience building
-              scalable products at companies like DoorDash and Microsoft, and as co-founder of Locavor.
+              I'm a passionate software engineer with over 3 years of experience building scalable products.
+              I love turning complex problems into simple, beautiful solutions that users actually enjoy using.
             </p>
             <p>
-              Alongside building, I love explaining. I write about AI agents and developer tools on Medium, and I
-              designed and taught a beginner web-development workshop series at UChicago.
+              When I'm not coding, you'll find me at the gym trying to hit a new PR, behind the camera for a
+              shoot, or following Duke basketball (goooo Blue Devils!!).
             </p>
-            <p>I care about turning complex problems into simple, clear solutions — in code and in teaching.</p>
           </div>
           <div className="space-y-3">
             <h3 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">Outside of work</h3>
