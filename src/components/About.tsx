@@ -9,7 +9,7 @@ const baseLink =
   "font-medium underline decoration-border underline-offset-4 transition-colors";
 
 const photoFrame =
-  "absolute bg-white p-1.5 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]";
+  "absolute shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]";
 
 const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
