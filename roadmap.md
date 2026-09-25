@@ -20,3 +20,4 @@
 
 ## In progress
 - [x] About: swap backstage photo for runway photo; overlap Instagram card on bottom right of the image
+- [x] About: restore previous photo/IG-card layout, shift right (2026-09-25)
