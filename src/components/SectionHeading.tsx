@@ -11,7 +11,7 @@ const SectionHeading = ({ eyebrow, title, subtitle }: SectionHeadingProps) => (
     {eyebrow && (
       <p className="text-sm font-medium uppercase tracking-widest text-primary">{eyebrow}</p>
     )}
-    <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">{title}</h2>
+    <h2 className="font-serif italic text-4xl md:text-5xl tracking-tight text-foreground">{title}</h2>
     {subtitle && <p className="text-lg text-muted-foreground leading-relaxed">{subtitle}</p>}
   </div>
 );

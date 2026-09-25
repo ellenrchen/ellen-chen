@@ -9,9 +9,10 @@ const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto">
-        <SectionHeading eyebrow="About" title="About me" />
-        <div className="grid md:grid-cols-5 gap-10 md:gap-14 items-start mt-10">
-          <div className="md:col-span-3 space-y-6 text-lg leading-relaxed text-muted-foreground">
+        <div className="grid md:grid-cols-5 gap-10 md:gap-14 items-start">
+          <div className="md:col-span-3">
+            <SectionHeading eyebrow="About" title="About me" />
+            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
               I'm a software engineer at EliseAI, with experience at DoorDash
               and Microsoft previously. At EliseAI, I work on workflows for
@@ -42,6 +43,7 @@ const About = () => (
               </a>
               . I'm also a big Duke fan.
             </p>
+            </div>
           </div>
           <div className="md:col-span-2">
             <img
