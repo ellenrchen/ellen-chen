@@ -11,9 +11,9 @@ const photoFrame =
 
 const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
-    <div className="container mx-auto px-6">
-      <div className="max-w-5xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
+    <div className="container mx-auto px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-[1.2fr_0.8fr] gap-12 md:gap-14 items-start">
           <div>
             <SectionHeading eyebrow="About" title="About me" />
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -51,7 +51,7 @@ const About = () => (
 
           {/* Photo + Instagram card overlapping bottom right */}
           <div className="relative">
-            <div className={`${photoFrame} w-[70%]`}>
+            <div className={`${photoFrame} ml-[12%] w-[70%]`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking the runway"
@@ -63,7 +63,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute -right-2 bottom-5 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
+              className="absolute -right-4 bottom-5 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.45)] transition-transform duration-300 hover:scale-[1.02]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
