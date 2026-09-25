@@ -51,7 +51,7 @@ const About = () => (
             </div>
           </div>
 
-          {/* Collage: photos + Instagram card, casually stacked */}
+          {/* Collage: photos + Instagram card, stacked edge to edge */}
           <div className="relative h-[440px] sm:h-[560px] lg:h-[660px]">
             <div className={`${photoFrame} left-0 top-0 w-[70%] z-0`}>
               <img
