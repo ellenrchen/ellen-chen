@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Layout from "@/components/Layout";
 import Experience from "@/components/Experience";
 
@@ -12,10 +12,12 @@ const sections = [
 
 const ExperiencePage = () => {
   const [active, setActive] = useState("eliseai");
+  const lockRef = useRef<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
+        if (lockRef.current) return;
         entries.forEach((entry) => {
           if (entry.isIntersecting) setActive(entry.target.id);
         });
@@ -31,6 +33,10 @@ const ExperiencePage = () => {
 
   const scrollTo = (id: string) => {
     setActive(id);
+    if (lockRef.current) window.clearTimeout(lockRef.current);
+    lockRef.current = window.setTimeout(() => {
+      lockRef.current = null;
+    }, 1000);
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 

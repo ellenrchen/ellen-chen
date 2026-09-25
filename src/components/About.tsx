@@ -69,7 +69,7 @@ const About = () => (
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} left-[10%] bottom-[24%] w-[42%] rotate-[1.5deg] z-10`}>
+            <div className={`${photoFrame} left-[10%] bottom-[20%] w-[42%] rotate-[1.5deg] z-10`}>
               <img
                 src={backstageImg}
                 alt="Ellen backstage in a fur collar and pleated skirt"
