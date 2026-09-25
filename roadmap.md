@@ -1,9 +1,12 @@
 # Roadmap
 
-- [x] Black-and-white retheme + "Monochrome display" hero (small "Hi, I'm", big italic serif name, grayscale borderless headshot)
-- [x] B&W headshot with lightened background baked into the image
-- [x] Verified full page in preview — no errors
-- [x] Rewired hero + About copy (no more "complex problems into simple, beautiful solutions")
-- [x] Brand colors in About links (EliseAI, DoorDash, Microsoft, Instagram, Duke)
-- [x] Colored company logos in Experience
-- [x] X profile (@ellenchen108) linked in header, contact card, and footer
+## Done
+- Monochrome theme with brand-color accents (logos, company names)
+- Real logos in Experience: EliseAI wordmark, DoorDash glyph, Microsoft squares; Locavor uses green leaf (no public logo found)
+- About: company names/Duke de-linked, Instagram icon added, Medium linked
+- Medium icon button added to header
+- Skills and Side Projects sections removed
+- Writing subtitle links to Medium
+
+## Open
+- Locavor logo: send the real logo file to replace the leaf placeholder
