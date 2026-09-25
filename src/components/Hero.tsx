@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, MapPin } from "lucide-react";
-import heroImage from "@/assets/ellen-headshot.jpeg";
+import heroImage from "@/assets/ellen-headshot-bw.jpg";
 
 const Hero = () => {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -55,7 +55,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Ellen Chen, Software Engineer"
-              className="aspect-[4/5] w-full object-cover grayscale contrast-105"
+              className="aspect-[4/5] w-full object-cover"
             />
           </div>
         </div>
