@@ -23,8 +23,9 @@ const Hero = () => {
             </div>
 
             <p className="max-w-md text-lg font-light leading-relaxed text-muted-foreground">
-              I'm a passionate software engineer with over 3 years of experience building scalable products.
-              I love turning complex problems into simple, beautiful solutions that users actually enjoy using.
+              I've spent the past 3+ years building scalable products end to
+              end, and I care most about the details that make software feel
+              effortless to use.
             </p>
 
             <p className="flex items-center gap-2 text-sm tracking-wide text-muted-foreground">
