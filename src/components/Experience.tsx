@@ -113,9 +113,12 @@ const Experience = () => {
               <Card key={index} className="p-6 md:p-8 bg-card shadow-card border border-border">
                 <div className="space-y-6">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
-                    <div className="space-y-2">
-                      <h3 className="text-xl font-semibold text-foreground">{exp.position}</h3>
-                      <h4 className="text-base text-primary font-medium">{exp.company}</h4>
+                    <div className="flex items-center gap-4">
+                      <CompanyLogo company={exp.company} />
+                      <div className="space-y-1">
+                        <h3 className="text-xl font-semibold text-foreground">{exp.position}</h3>
+                        <h4 className="text-base text-primary font-medium">{exp.company}</h4>
+                      </div>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
                       <Badge variant="secondary" className="flex items-center gap-1">
