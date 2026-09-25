@@ -10,5 +10,3 @@
 
 ## Open
 - Locavor logo: send the real logo file to replace the leaf placeholder
-- Center the portfolio page content (currently pushed right by sidebar grid)
-- Reword About "passion for complex, messy workflows" sentence to sound more polished
