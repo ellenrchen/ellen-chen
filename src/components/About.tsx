@@ -53,7 +53,7 @@ const About = () => (
 
           {/* Collage: photos + Instagram card, casually stacked */}
           <div className="relative h-[440px] sm:h-[560px] lg:h-[660px]">
-            <div className={`${photoFrame} left-0 top-0 w-[70%] -rotate-2 z-0`}>
+            <div className={`${photoFrame} left-0 top-0 w-[70%] z-0`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking a runway"
