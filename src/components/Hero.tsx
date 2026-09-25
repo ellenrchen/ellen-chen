@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, MapPin } from "lucide-react";
-import heroImage from "@/assets/ellen-headshot.jpeg.asset.json";
+import heroImage from "@/assets/ellen-headshot.jpeg";
 
 const Hero = () => {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -47,7 +47,7 @@ const Hero = () => {
             <div className="absolute -inset-3 rounded-3xl bg-gradient-hero opacity-10" />
             <div className="relative overflow-hidden rounded-2xl bg-card p-2 shadow-card">
               <img
-                src={heroImage.url}
+                src={heroImage}
                 alt="Ellen Chen, Software Engineer"
                 className="h-[420px] w-full rounded-xl object-cover lg:h-[520px]"
               />
