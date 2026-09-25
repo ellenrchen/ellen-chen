@@ -6,7 +6,7 @@ const baseLink =
   "font-medium underline decoration-border underline-offset-4 transition-colors";
 
 const About = () => (
-  <section id="about" className="py-20 md:py-28 bg-background">
+  <section id="about" className="py-12 md:py-16 bg-background">
     <div className="container mx-auto px-4">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 lg:items-center">
         {/* Left column: copy */}
@@ -57,7 +57,7 @@ const About = () => (
               <img
                 src={runwayImg}
                 alt="Ellen walking the runway"
-                className="w-full aspect-[2/3] object-cover"
+                className="w-full aspect-[3/4] object-cover object-bottom"
                 loading="lazy"
               />
             </div>
@@ -65,7 +65,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute -bottom-6 -right-4 md:-right-8 bg-card border border-border p-4 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] flex items-center gap-3 min-w-[230px] transition-all duration-300 hover:-translate-y-1"
+              className="absolute -bottom-8 -right-4 md:-right-8 bg-card border border-border p-4 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] flex items-center gap-3 min-w-[230px] transition-all duration-300 hover:-translate-y-1"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div
