@@ -23,4 +23,4 @@
 - [x] About: restore previous photo/IG-card layout, shift right (2026-09-25)
 
 ## In progress
-- [ ] About page redesign — mock options for whole-page layout (user: "make About Me look better in general"), incl. photo + Instagram card positioning; awaiting user pick
+- [x] About page redesign — Editorial Asymmetry direction implemented
