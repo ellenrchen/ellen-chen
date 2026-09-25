@@ -1,13 +1,9 @@
 import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, MapPin } from "lucide-react";
-
-const brandColors: Record<string, string> = {
-  EliseAI: "#4353FF",
-  DoorDash: "#FF3008",
-  Locavor: "#16A34A",
-};
+import { CalendarDays, MapPin, Leaf } from "lucide-react";
+import eliseaiLogo from "@/assets/logos/eliseai.svg";
+import doordashLogo from "@/assets/logos/doordash.svg";
 
 const MicrosoftLogo = () => (
   <svg viewBox="0 0 23 23" className="h-6 w-6" aria-hidden="true">
@@ -19,16 +15,15 @@ const MicrosoftLogo = () => (
 );
 
 const CompanyLogo = ({ company }: { company: string }) => (
-  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-card">
+  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-card px-1.5">
     {company === "Microsoft" ? (
       <MicrosoftLogo />
+    ) : company === "EliseAI" ? (
+      <img src={eliseaiLogo} alt="EliseAI logo" className="h-5 w-auto" />
+    ) : company === "DoorDash" ? (
+      <img src={doordashLogo} alt="DoorDash logo" className="h-6 w-6" />
     ) : (
-      <span
-        className="flex h-full w-full items-center justify-center text-sm font-semibold text-white"
-        style={{ backgroundColor: brandColors[company] }}
-      >
-        {company.charAt(0)}
-      </span>
+      <Leaf className="h-6 w-6" style={{ color: "#16A34A" }} aria-hidden="true" />
     )}
   </div>
 );
