@@ -9,7 +9,7 @@ const baseLink =
   "font-medium underline decoration-border underline-offset-4 transition-colors";
 
 const photoFrame =
-  "absolute bg-white p-1.5 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]";
+  "absolute shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]";
 
 const About = () => (
   <section id="about" className="py-20 md:py-28 bg-background">
@@ -53,27 +53,27 @@ const About = () => (
 
           {/* Collage: photos + Instagram card, casually stacked */}
           <div className="relative h-[440px] sm:h-[560px] lg:h-[660px]">
-            <div className={`${photoFrame} left-0 top-0 w-[68%] -rotate-2 z-0`}>
+            <div className={`${photoFrame} left-0 top-0 w-[70%] -rotate-2 z-0`}>
               <img
                 src={runwayImg}
                 alt="Ellen walking a runway"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} right-0 top-10 w-[46%] rotate-[2.5deg] z-10`}>
+            <div className={`${photoFrame} right-0 top-6 w-[48%] rotate-[2.5deg] z-10`}>
               <img
                 src={vogueImg}
                 alt="Ellen in a sheer blue dress during a street-style shoot"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} left-[10%] bottom-[20%] w-[42%] rotate-[1.5deg] z-10`}>
+            <div className={`${photoFrame} left-[6%] bottom-6 w-[44%] rotate-[1.5deg] z-10`}>
               <img
                 src={backstageImg}
                 alt="Ellen backstage in a fur collar and pleated skirt"
-                className="w-full aspect-[3/4] object-cover"
+                className="w-full aspect-[2/3] object-cover"
                 loading="lazy"
               />
             </div>
