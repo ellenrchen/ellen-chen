@@ -15,7 +15,7 @@ const About = () => (
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
               I'm a software engineer at EliseAI, with experience at DoorDash
-              and Microsoft previously. What drives me is taking complex,
+              and Microsoft previously. I have a passion for taking complex,
               messy workflows and turning them into something simple and
               user-friendly.
             </p>
