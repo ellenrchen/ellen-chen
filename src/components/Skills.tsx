@@ -1,3 +1,4 @@
+import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Globe, Smartphone, Cloud, Wrench } from "lucide-react";
@@ -22,25 +23,20 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
+    <section id="skills" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-foreground">Skills & Technologies</h2>
-            <p className="text-xl text-muted-foreground">
-              Technologies I work with to bring ideas to life
-            </p>
-          </div>
+        <div className="max-w-5xl mx-auto">
+          <SectionHeading eyebrow="Skills" title="Technologies I work with" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
-              <Card key={index} className="p-6 bg-gradient-card shadow-card border-0 hover:shadow-elegant transition-all duration-300 h-full">
+              <Card key={index} className="p-6 bg-card shadow-card border border-border h-full">
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
                     <div className="p-3 bg-primary/10 rounded-lg">
                       <category.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
+                    <h3 className="text-lg font-semibold text-foreground">{category.title}</h3>
                   </div>
                   
                   <div className="flex flex-wrap gap-2">
@@ -48,7 +44,7 @@ const Skills = () => {
                       <Badge 
                         key={idx} 
                         variant="secondary" 
-                        className="text-sm hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
+                        className="text-sm"
                       >
                         {skill}
                       </Badge>
