@@ -63,7 +63,7 @@ const Writing = () => (
           title="Articles on AI agents & developer tools"
           subtitle={
             <>
-              Explainers and build logs I publish on{" "}
+              Stuff I publish on{" "}
               <a
                 href="https://medium.com/@ellenrchen8"
                 target="_blank"
