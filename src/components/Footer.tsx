@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -6,6 +6,13 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center gap-5">
+            <a
+              href="mailto:ellenrchen8@gmail.com"
+              aria-label="Email"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Mail className="h-5 w-5" />
+            </a>
             <a
               href="https://github.com/ellenrchen"
               target="_blank"
