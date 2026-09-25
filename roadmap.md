@@ -19,4 +19,4 @@
 - [x] About collage simplified: backstage photo + ellyeats_ card; new food-profile.jpg as card avatar
 
 ## In progress
-- About: swap backstage photo for runway photo; overlap Instagram card on bottom right of the image
+- [x] About: swap backstage photo for runway photo; overlap Instagram card on bottom right of the image
