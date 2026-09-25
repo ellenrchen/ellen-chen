@@ -61,7 +61,7 @@ const About = () => (
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} right-0 top-6 w-[48%] rotate-[2.5deg] z-10`}>
+            <div className={`${photoFrame} right-0 top-6 w-[48%] z-10`}>
               <img
                 src={vogueImg}
                 alt="Ellen in a sheer blue dress during a street-style shoot"
@@ -69,7 +69,7 @@ const About = () => (
                 loading="lazy"
               />
             </div>
-            <div className={`${photoFrame} left-[6%] bottom-6 w-[44%] rotate-[1.5deg] z-10`}>
+            <div className={`${photoFrame} left-[6%] bottom-6 w-[44%] z-10`}>
               <img
                 src={backstageImg}
                 alt="Ellen backstage in a fur collar and pleated skirt"
@@ -81,7 +81,7 @@ const About = () => (
               href="https://www.instagram.com/ellyeats_"
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute right-0 bottom-0 z-20 w-[60%] -rotate-1 bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]"
+              className="absolute right-0 bottom-0 z-20 w-[60%] bg-card border border-border p-4 shadow-[0_18px_40px_-18px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:z-30 hover:scale-[1.03]"
               aria-label="Follow @ellyeats_ on Instagram"
             >
               <div className="flex items-center gap-3">
