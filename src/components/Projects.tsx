@@ -1,63 +1,37 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import SectionHeading from "./SectionHeading";
+import LinkCard from "./LinkCard";
 
-const Projects = () => {
-  const projects = [
-    {
-      title: "Cook My Fridge",
-      description: "Full-stack recipe generator that calls GPT-3.5-Turbo to suggest meals from on-hand ingredients with secure server-side API-key management and streaming responses",
-      technologies: ["React", "Tailwind", "Express", "GPT-3.5-Turbo", "Node.js"]
-    },
-    {
-      title: "Tech News Agent",
-      description: "Engineered a Python workflow that pulls articles from 8 tech RSS feeds, ranks them, and uses GPT-3.5-Turbo generated summaries to create daily CLI/email digest",
-      technologies: ["Python", "GPT-3.5-Turbo", "RSS"]
-    }
-  ];
+const projects = [
+  {
+    title: "tech-news-agent",
+    meta: "Python · OpenAI",
+    description: "An AI agent that fetches tech news from RSS feeds, summarizes it with OpenAI, and emails a digest.",
+    links: [{ label: "GitHub", href: "https://github.com/ellenrchen/tech-news-agent" }],
+  },
+  {
+    title: "cook-my-fridge",
+    meta: "TypeScript · AI",
+    description: "An AI app that turns leftover ingredients into recipe ideas.",
+    links: [
+      { label: "GitHub", href: "https://github.com/ellenrchen/cook-my-fridge" },
+      { label: "Live site", href: "https://cook-my-fridge.lovable.app/" },
+    ],
+  },
+];
 
-  return (
-    <section id="projects" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold text-foreground">Side Projects</h2>
-            <p className="text-xl text-muted-foreground">
-              Personal projects built to solve real problems
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="bg-gradient-card shadow-card border-0 hover:shadow-elegant transition-all duration-300 h-full">
-                <CardHeader>
-                  <CardTitle className="text-xl text-foreground flex items-center justify-between">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-base">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, idx) => (
-                      <Badge 
-                        key={idx} 
-                        variant="secondary" 
-                        className="text-sm hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+const Projects = () => (
+  <section id="projects" className="py-20 md:py-28 bg-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-5xl mx-auto">
+        <SectionHeading eyebrow="Projects" title="Side projects" subtitle="Things I've built to explore AI tooling." />
+        <div className="grid gap-6 md:grid-cols-2">
+          {projects.map((p) => (
+            <LinkCard key={p.title} {...p} />
+          ))}
         </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Projects;

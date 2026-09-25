@@ -1,140 +1,59 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Mail, Sparkles, Code2, Zap } from "lucide-react";
+import { ArrowDown, Github, MapPin } from "lucide-react";
 import heroImage from "/lovable-uploads/19e48d04-2ef1-4eee-b675-710737d4d097.png";
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-  };
+  const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-subtle">
-        <div className="absolute inset-0">
-          {/* Floating geometric shapes */}
-          <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-primary/20 rounded-lg rotate-45 animate-bounce"></div>
-          <div className="absolute bottom-32 left-20 w-12 h-12 bg-primary/15 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute top-1/3 left-1/4 w-8 h-8 bg-primary/25 rounded-full animate-bounce delay-500"></div>
-          <div className="absolute bottom-40 right-1/3 w-6 h-6 bg-primary/30 rounded-full animate-pulse delay-700"></div>
-          
-          {/* Gradient orbs */}
-          <div className="absolute top-1/4 right-1/4 w-32 h-32 bg-gradient-radial from-primary/20 to-transparent rounded-full animate-pulse"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-gradient-radial from-primary-glow/15 to-transparent rounded-full animate-pulse delay-1000"></div>
-        </div>
-      </div>
-
-      <div className="container mx-auto px-6 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="relative flex min-h-screen items-center bg-gradient-subtle pt-16">
+      <div className="container mx-auto px-6 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto grid items-center gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
           <div className="space-y-8 animate-fade-up">
-            <div className="space-y-6">
-              {/* Creative badge */}
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium animate-fade-in">
-                <Sparkles className="h-4 w-4" />
-                Full-Stack Developer
-              </div>
-              
-              <h1 className="text-5xl lg:text-7xl font-bold text-foreground leading-tight">
-                Hi, I'm{" "}
-                <span className="bg-gradient-hero bg-clip-text text-transparent relative">
-                  Ellen Chen
-                  <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary/60 rounded-full animate-pulse"></div>
-                </span>
+            <div className="space-y-5">
+              <p className="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-primary">
+                Software Engineer @ EliseAI
+              </p>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] text-foreground">
+                Hi, I'm <span className="bg-gradient-hero bg-clip-text text-transparent">Ellen Chen</span>
               </h1>
-              
-              <div className="flex items-center gap-4 text-2xl lg:text-3xl text-muted-foreground">
-                <Code2 className="h-8 w-8 text-primary animate-pulse" />
-                <span className="font-medium">Software Engineer</span>
-                <Zap className="h-6 w-6 text-primary animate-bounce" />
-              </div>
-              
-              <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-                Passionate about building <span className="text-primary font-semibold">scalable products</span> with over 3 years of experience. 
-                I love turning complex problems into simple, beautiful solutions that users actually enjoy using.
+              <p className="max-w-xl text-lg md:text-xl leading-relaxed text-muted-foreground">
+                A software engineer who teaches. I write about AI agents and developer tools, and I design and
+                teach technical workshops.
+              </p>
+              <p className="flex items-center gap-2 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4" /> New York City
               </p>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                variant="hero" 
-                size="lg"
-                onClick={() => scrollToSection('about')}
-                className="text-lg px-8 py-6 group relative overflow-hidden"
-              >
-                <span className="relative z-10">Learn More About Me</span>
-                <ArrowDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Button variant="hero" size="lg" onClick={() => go("writing")}>
+                See my work <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={() => window.open('https://github.com/ellenrchen', '_blank')}
-                className="text-lg px-8 py-6 hover-scale border-2 border-primary/20 hover:border-primary/50"
-              >
-                <Github className="mr-2 h-5 w-5" />
-                View My Work
+              <Button variant="outline" size="lg" asChild>
+                <a href="https://github.com/ellenrchen" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-4 w-4" /> GitHub
+                </a>
               </Button>
-            </div>
-            
-            {/* Stats */}
-            <div className="flex gap-8 pt-4">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary">3+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
+              <Button variant="ghost" size="lg" asChild>
+                <a href="https://medium.com/@ellenrchen8" target="_blank" rel="noopener noreferrer">
+                  Medium
+                </a>
+              </Button>
             </div>
           </div>
-          
-          {/* Creative image section */}
-          <div className="relative animate-fade-in">
-            <div className="relative group">
-              {/* Background decoration - toned down */}
-              <div className="absolute -inset-3 bg-gradient-hero rounded-3xl opacity-10 group-hover:opacity-15 transition-opacity duration-500"></div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/10 to-primary-glow/10 rounded-2xl blur-sm"></div>
-              
-              {/* Main image container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-card bg-white p-2">
-                <div className="relative rounded-xl overflow-hidden">
-                  <img 
-                    src={heroImage} 
-                    alt="Ellen Chen - Software Engineer"
-                    className="w-full h-[500px] lg:h-[600px] object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  
-                  {/* Location badge only */}
-                  <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-elegant">
-                    <div className="text-sm font-medium text-foreground">NYC Based</div>
-                  </div>
-                  
-                  {/* Tech stack floating elements */}
-                  <div className="absolute top-1/3 -left-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium animate-bounce delay-300">
-                    React
-                  </div>
-                  <div className="absolute bottom-1/3 -right-4 bg-primary-glow text-white px-3 py-1 rounded-full text-xs font-medium animate-bounce delay-700">
-                    Kotlin
-                  </div>
-                </div>
-              </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute -top-8 -right-8 w-16 h-16 border-4 border-primary/30 rounded-full animate-spin"></div>
-              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-primary/20 rounded-lg rotate-45 animate-pulse"></div>
+
+          <div className="relative mx-auto w-full max-w-sm lg:max-w-none animate-fade-in">
+            <div className="absolute -inset-3 rounded-3xl bg-gradient-hero opacity-10" />
+            <div className="relative overflow-hidden rounded-2xl bg-card p-2 shadow-card">
+              <img
+                src={heroImage}
+                alt="Ellen Chen, Software Engineer"
+                className="h-[420px] w-full rounded-xl object-cover lg:h-[520px]"
+              />
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-        >
-          <ArrowDown className="h-6 w-6" />
-          <span className="text-xs">Scroll to explore</span>
-        </button>
       </div>
     </section>
   );
