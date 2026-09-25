@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="max-w-2xl">
             <Card className="p-8 bg-card shadow-card border border-border">
               <div className="space-y-6">
-                <h3 className="text-2xl font-semibold text-foreground">Get In Touch</h3>
+                <h3 className="text-xl font-semibold text-foreground">Get in touch</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   I'm always open to discussing new opportunities, interesting projects, 
                   or just chatting about technology.
