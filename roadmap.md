@@ -14,3 +14,6 @@
 ## Done
 - [x] About redesign: 3-photo collage (runway, Vogue street-style, backstage) + Instagram @ellyeats_ profile card
 - [x] Experience page: gutter sidebar with company names (EliseAI, DoorDash, Locavor, DoorDash Intern, Microsoft)
+
+## In progress
+- [x] About collage simplified: backstage photo + ellyeats_ card; new food-profile.jpg as card avatar
