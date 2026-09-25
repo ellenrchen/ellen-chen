@@ -1,7 +1,37 @@
 import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CalendarDays, MapPin, ExternalLink } from "lucide-react";
+import { CalendarDays, MapPin } from "lucide-react";
+
+const brandColors: Record<string, string> = {
+  EliseAI: "#4353FF",
+  DoorDash: "#FF3008",
+  Locavor: "#16A34A",
+};
+
+const MicrosoftLogo = () => (
+  <svg viewBox="0 0 23 23" className="h-6 w-6" aria-hidden="true">
+    <rect fill="#f25022" width="11" height="11" />
+    <rect fill="#7fba00" x="12" width="11" height="11" />
+    <rect fill="#00a4ef" y="12" width="11" height="11" />
+    <rect fill="#ffb900" x="12" y="12" width="11" height="11" />
+  </svg>
+);
+
+const CompanyLogo = ({ company }: { company: string }) => (
+  <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border bg-card">
+    {company === "Microsoft" ? (
+      <MicrosoftLogo />
+    ) : (
+      <span
+        className="flex h-full w-full items-center justify-center text-sm font-semibold text-white"
+        style={{ backgroundColor: brandColors[company] }}
+      >
+        {company.charAt(0)}
+      </span>
+    )}
+  </div>
+);
 
 const Experience = () => {
   const experiences = [
