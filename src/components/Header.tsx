@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Mail, Menu, X } from "lucide-react";
+import { Github, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
 const links = [
@@ -35,11 +35,6 @@ const Header = () => {
           </div>
 
           <div className="flex items-center gap-1">
-            <Button variant="ghost" size="icon" aria-label="Email" asChild>
-              <a href="mailto:ellenrchen8@gmail.com">
-                <Mail className="h-5 w-5" />
-              </a>
-            </Button>
             <Button variant="ghost" size="icon" aria-label="X (Twitter)" asChild>
               <a href="https://x.com/ellenchen108" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">

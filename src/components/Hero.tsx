@@ -21,11 +21,6 @@ const Hero = () => {
               </div>
             </div>
 
-            <p className="max-w-md text-lg font-light leading-relaxed text-muted-foreground">
-              I've spent the past 3+ years building scalable products end to
-              end, and I care most about the details that make software feel
-              effortless to use.
-            </p>
 
             <p className="flex items-center gap-2 text-sm tracking-wide text-muted-foreground">
               <MapPin className="h-4 w-4" strokeWidth={1.5} /> New York City
