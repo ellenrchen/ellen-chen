@@ -2,49 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Personal Website Design System - Warm Cream & Maroon Theme */
+/* Modern Personal Website Design System - Monochrome Theme */
 
 @layer base {
   :root {
-    --background: 24 30% 98%;
-    --foreground: 350 30% 14%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
 
     --card: 0 0% 100%;
-    --card-foreground: 350 30% 14%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 350 30% 14%;
+    --popover-foreground: 0 0% 7%;
 
-    /* Maroon inspired primary colors */
-    --primary: 355 55% 27%;
-    --primary-foreground: 20 33% 96%;
-    --primary-glow: 355 45% 45%;
+    /* Monochrome primary colors */
+    --primary: 0 0% 7%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 0% 30%;
 
-    --secondary: 20 25% 91%;
-    --secondary-foreground: 350 30% 14%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 20 22% 92%;
-    --muted-foreground: 350 12% 42%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 355 40% 93%;
-    --accent-foreground: 355 55% 30%;
+    --accent: 0 0% 94%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 20 18% 86%;
-    --input: 20 18% 86%;
-    --ring: 355 55% 27%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 7%;
 
     /* Custom gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(355 55% 32%) 0%, hsl(355 60% 20%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(20 33% 96%) 0%, hsl(20 28% 93%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(20 25% 97%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 7%) 0%, hsl(0 0% 35%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(0 0% 97%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(0 0% 98%) 100%);
 
     /* Shadows */
-    --shadow-elegant: 0 4px 20px -4px hsl(355 55% 27% / 0.12);
-    --shadow-card: 0 2px 10px -2px hsl(350 30% 14% / 0.08);
-    --shadow-glow: 0 0 30px hsl(355 45% 45% / 0.25);
+    --shadow-elegant: 0 4px 20px -4px hsl(0 0% 7% / 0.1);
+    --shadow-card: 0 2px 10px -2px hsl(0 0% 7% / 0.08);
+    --shadow-glow: 0 0 30px hsl(0 0% 30% / 0.2);
 
     --radius: 0.5rem;
 
