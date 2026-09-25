@@ -10,24 +10,13 @@ const About = () => (
     <div className="container mx-auto px-6">
       <div className="max-w-5xl mx-auto">
         <SectionHeading eyebrow="About" title="About me" />
-        <div className="grid md:grid-cols-5 gap-10 md:gap-14 items-center mt-10">
+        <div className="grid md:grid-cols-5 gap-10 md:gap-14 items-start mt-10">
           <div className="md:col-span-3 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              I'm a software engineer at{" "}
-              <span className="font-medium" style={{ color: "#4353FF" }}>
-                EliseAI
-              </span>
-              , with experience at{" "}
-              <span className="font-medium" style={{ color: "#FF3008" }}>
-                DoorDash
-              </span>{" "}
-              and{" "}
-              <span className="font-medium" style={{ color: "#0078D4" }}>
-                Microsoft
-              </span>{" "}
-              previously. Much of my work has been taking messy, high-stakes
-              workflows and shaping them into products people actually enjoy
-              using.
+              I'm a software engineer at EliseAI, with experience at DoorDash
+              and Microsoft previously. At EliseAI, I work on workflows for
+              property management companies; at DoorDash, I worked on merchant
+              onboarding; and at Microsoft, I worked on OneDrive settings.
             </p>
             <p>
               Outside of work, you may find me at a photo shoot or on a runway,
@@ -51,11 +40,7 @@ const About = () => (
               >
                 Medium
               </a>
-              . I'm also a big{" "}
-              <span className="font-medium" style={{ color: "#012169" }}>
-                Duke
-              </span>{" "}
-              fan.
+              . I'm also a big Duke fan.
             </p>
           </div>
           <div className="md:col-span-2">
