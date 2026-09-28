@@ -166,7 +166,7 @@ const Experience = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
-                <span className="leading-relaxed">New York Junior League — Savor the Spring committee member, Jan 2024 – present</span>
+                <span className="leading-relaxed">New York Junior League — Savor the Spring committee member, Jan 2024 – present. Coordinated the 2025 and 2026 Savor the Spring fundraiser (300+ attendees), securing $136k+ and $130k+ respectively for NYC programs that uplift women and children.</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
