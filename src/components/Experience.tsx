@@ -158,6 +158,22 @@ const Experience = () => {
               </Card>
             ))}
           </div>
+
+          <div className="mt-14 border-t border-border pt-8">
+            <h3 className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-4">
+              Community
+            </h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
+                <span className="leading-relaxed">New York Junior League — volunteer</span>
+              </li>
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
+                <span className="leading-relaxed">University of Chicago Women's Alliance — member</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
