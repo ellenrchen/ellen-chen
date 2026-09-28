@@ -1,23 +1,21 @@
 import SectionHeading from "./SectionHeading";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Mail, Github, Linkedin, MapPin, Calendar, GraduationCap } from "lucide-react";
+import { Mail, Github } from "lucide-react";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
-          <SectionHeading eyebrow="Contact" title="Let's connect" subtitle="Open to conversations about engineering, developer relations, and teaching." />
+          <SectionHeading eyebrow="Contact" title="Let's connect" subtitle="For questions about my work, writing, or workshops." />
 
           <div className="mx-auto max-w-2xl text-center">
             <Card className="p-8 bg-card shadow-card border border-border">
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold text-foreground">Get in touch</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm always open to discussing new opportunities, interesting projects, 
-                  or just chatting about technology.
+                  Email me to talk about software engineering, technical writing, or workshops.
                 </p>
                 
                 <div className="space-y-4 max-w-md mx-auto">

@@ -21,7 +21,7 @@ const articles = [
     date: "Jun 2025",
     readTime: "8 min read",
     description:
-      "A hands-on build log of a Python news-digest agent built with Cursor + Claude-4-Sonnet, with real code, architecture, and token cost analysis.",
+      "A hands-on build log of a Python news-digest agent that summarizes six RSS sources with GPT-4 Turbo, with real code, architecture, and token cost analysis.",
     href: "https://medium.com/@ellenrchen8/building-my-first-ai-agent-b97d0c1b1509",
   },
   {

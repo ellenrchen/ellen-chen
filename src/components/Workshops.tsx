@@ -20,24 +20,24 @@ const seriesList: Series[] = [
     workshops: [
       {
         title: "Intro to HTML",
-        description: "Build a personal website from scratch.",
+        description: "For UChicago students new to web development: learn semantic page structure and leave with a working personal-site skeleton.",
         links: [
-          { label: "Repo", href: "https://github.com/ellenrchen/intro-html-workshop" },
-          { label: "Demo", href: "https://ellenrchen.github.io/intro-html-workshop/" },
+          { label: "Repository", href: "https://github.com/ellenrchen/intro-html-workshop" },
+          { label: "Live demo", href: "https://ellenrchen.github.io/intro-html-workshop/" },
         ],
       },
       {
         title: "Intro to CSS",
-        description: "Style that website — the sequel to the HTML workshop.",
+        description: "For beginners continuing the same site: turn the HTML foundation into a responsive page while learning selectors, layout, color, and the cascade.",
         links: [
-          { label: "Repo", href: "https://github.com/ellenrchen/intro-css-workshop" },
-          { label: "Demo", href: "https://ellenrchen.github.io/intro-css-workshop/" },
+          { label: "Repository", href: "https://github.com/ellenrchen/intro-css-workshop" },
+          { label: "Live demo", href: "https://ellenrchen.github.io/intro-css-workshop/" },
         ],
       },
       {
         title: "Intro to JavaScript",
-        description: "Build a to-do list app.",
-        links: [{ label: "Repo", href: "https://github.com/ellenrchen/intro-js-workshop" }],
+        description: "For first-time JavaScript learners: move from static pages to interaction and leave with a functional to-do list app.",
+        links: [{ label: "Repository", href: "https://github.com/ellenrchen/intro-js-workshop" }],
       },
     ],
   },
@@ -46,7 +46,11 @@ const seriesList: Series[] = [
 const Workshops = () => (
   <section id="workshops" className="py-20 md:py-28">
     <div className="max-w-5xl mx-auto">
-      <SectionHeading eyebrow="Workshops" title="Workshops" />
+      <SectionHeading
+        eyebrow="Workshops"
+        title="Workshops"
+        subtitle="A three-part beginner web-development series I designed and taught for UChicago students. Each session leaves first-time developers with a working artifact: structure, then style, then interaction."
+      />
 
       <div className="space-y-20">
         {seriesList.map((series) => (

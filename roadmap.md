@@ -26,11 +26,11 @@
 - [x] About page redesign — Editorial Asymmetry direction implemented
 
 ## In progress
-- [ ] Workshops: scalable list layout for multiple series (mocks in progress)
+- [x] Workshops: scalable list layout for multiple series
 - [x] Workshops: group web workshops as one series group; scalable to add more series
 
 ## In progress
-- [ ] Add portfolio Projects section with featured tech-news-agent, ticket-triage-agent, and cook-my-fridge
-- [ ] Add the new home-page positioning line with “production AI” emphasis
-- [ ] Update workshop introduction and descriptions while preserving existing links
-- [ ] Standardize tech-news-agent references on GPT-4 Turbo and remove prohibited positioning copy
+- [x] Add portfolio Projects section with featured tech-news-agent, ticket-triage-agent, and cook-my-fridge
+- [x] Add the new home-page positioning line with “production AI” emphasis
+- [x] Update workshop introduction and descriptions while preserving existing links
+- [x] Standardize tech-news-agent references on GPT-4 Turbo and remove prohibited positioning copy

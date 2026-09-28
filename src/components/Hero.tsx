@@ -21,6 +21,9 @@ const Hero = () => {
               </div>
             </div>
 
+            <p className="max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+              I build <span className="font-serif text-xl italic text-foreground md:text-2xl">production AI</span> at EliseAI, then bring the work to developers through open-source builds, technical writing, and hands-on workshops.
+            </p>
 
             <p className="flex items-center gap-2 text-sm tracking-wide text-muted-foreground">
               <MapPin className="h-4 w-4" strokeWidth={1.5} /> New York City
