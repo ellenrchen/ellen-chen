@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
+import Projects from "@/components/Projects";
 import Writing from "@/components/Writing";
 import Workshops from "@/components/Workshops";
 
 const sections = [
+  { id: "projects", label: "Projects" },
   { id: "writing", label: "Writing" },
   { id: "workshops", label: "Workshops" },
 ];
 
 const PortfolioPage = () => {
-  const [active, setActive] = useState("writing");
+  const [active, setActive] = useState("projects");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -72,6 +74,7 @@ const PortfolioPage = () => {
         </div>
 
         <div className="min-w-0 xl:pl-24">
+          <Projects />
           <Writing />
           <Workshops />
         </div>
