@@ -166,11 +166,11 @@ const Experience = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
-                <span className="leading-relaxed">New York Junior League — volunteer</span>
+                <span className="leading-relaxed">New York Junior League — Savor the Spring committee member, Jan 2024 – present</span>
               </li>
               <li className="flex items-start gap-3 text-muted-foreground">
                 <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2.5 flex-shrink-0"></div>
-                <span className="leading-relaxed">University of Chicago Women's Alliance — member</span>
+                <span className="leading-relaxed">University of Chicago Women's Alliance — New York Metro Committee, Sep 2026 – present</span>
               </li>
             </ul>
           </div>
