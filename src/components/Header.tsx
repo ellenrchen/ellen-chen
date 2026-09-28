@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Menu, X } from "lucide-react";
+import { Github, Linkedin, Menu, X } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
 const links = [
@@ -50,6 +50,11 @@ const Header = () => {
             <Button variant="ghost" size="icon" aria-label="Medium" asChild>
               <a href="https://medium.com/@ellenrchen8" target="_blank" rel="noopener noreferrer">
                 <MediumLogo className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" aria-label="LinkedIn" asChild>
+              <a href="https://www.linkedin.com/in/ellenrchen" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="md:hidden" aria-label="Menu" onClick={() => setOpen(!open)}>
