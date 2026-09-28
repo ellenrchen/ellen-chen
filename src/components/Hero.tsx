@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
 
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              I'm a software engineer who builds, but I also have a passion for creating content and engaging with the developer community.
+              I'm a software engineer building AI workflows for housing, and I share what I learn through writing, open source, and workshops.
             </p>
 
             <p className="flex items-center gap-2 text-sm tracking-wide text-muted-foreground">
